@@ -15,7 +15,7 @@ header {
 .nav-item li {
     display: inline-block;
     align-content: flex-end;
-}
+} 
 
 ul.nav justify- content-end li a {
     text-decoration: none;
@@ -54,3 +54,37 @@ footer{
     row-gap: 20px;
 }
 
+@media screen and (max-width:576px) {
+
+    .navbar-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-centered {
+        align-items: center;
+    }
+    
+    .grid-fotos img {
+        display: inline-block;
+            width: 80%;
+            border: solid 1px rgb(15, 15, 15);
+            border-radius: 2rem; 
+        }
+
+}
+
+@media screen and (max-width:1200px) {
+    .grid-fotos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .grid-fotos img {
+        width: 80%;
+        border: solid 1px rgb(15, 15, 15);
+        border-radius: 2rem; 
+    }
+}
